@@ -1,0 +1,14 @@
+.nabar-container {
+  background-color: $background-color;
+  height: 100%;
+  width: 200px;
+  display: flex;
+  border-right: solid $border-background 1px;
+}
+
+.data-container {
+  list-style: none;
+}
+.data-container li {
+  color: $text-color;
+}

@@ -1,0 +1,34 @@
+.menu-container {
+  background-color: $background-color;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: solid $border-background 1px;
+  color: white;
+}
+
+.links-container {
+  font-size: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 2rem;
+  justify-content: right;
+  text-decoration: none;
+}
+.links-container li {
+  font-size: 14px;
+  color: $text-color;
+  outline: none;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.link-style {
+  text-decoration: none;
+}
+.links-container li:hover {
+  color: greenyellow;
+}
