@@ -1,12 +1,66 @@
-.main-page-container{
-    background-color: $background-color;
+.main-page-container {
+  background-color: $background-color;
 }
 
-.green-text{
-    color: $text-color
+.green-text {
+  color: $text-color;
 }
 
-.navbar-content-container{
-    display: flex;
+.navbar-content-container {
+  display: flex;
+}
+.table-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 10% 0 10%;
+}
 
+.table-header {
+  width: calc(100% + 50px);
+  height: 80px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 20px;
+  list-style: none;
+  border-bottom: 3px solid $border-background;
+  color: $text-color;
+}
+
+.table-content {
+  width: calc(100% + 50px);
+}
+.table-content ul {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid $border-background;
+  color: $text-color;
+}
+.table-content li,
+.table-header li {
+  margin-right: 50px;
+}
+.table-content ul:hover {
+  background-color: rgb(18, 48, 75);
+}
+.table-content li:not(.table-content li:nth-child(1)),
+.table-header li:not(.table-header li:nth-child(1)) {
+  width: calc(100% - 50px);
+}
+.table-content li:nth-child(2),
+.table-header li:nth-child(2) {
+  width: calc(100% + 40px) !important;
+  display: flex;
+  gap: 1rem;
+}
+.table-content li:nth-child(1),
+.table-header li:nth-child(1) {
+  width: 60px !important;
+  display: flex;
+  gap: 1rem;
 }
