@@ -25,7 +25,6 @@ const TableList = () => {
   const cryptocurrencies = useSelector(
     (state) => state.allCryptoApis.cryptocurrencies
   );
-  console.log(cryptocurrencies);
   if (
     typeof cryptocurrencies === "undefined" ||
     (Object.keys(cryptocurrencies).length === 0 &&

@@ -10,7 +10,29 @@ export const getCryptocurrencies = () => {
         // url: "https://rest.coinapi.io/v1/assets?apikey=9B9E8793-D68F-4C61-AD50-FC3A1CFF0320",
       });
       // console.log(response);
-      dispatch({ type: ActionTypes.FETCH_API, payload: response });
+      dispatch({
+        type: ActionTypes.GET_CRYPTOCURRENCY_LIST,
+        payload: response,
+      });
+    } catch (e) {
+      console.error(e);
+    }
+  };
+};
+
+export const getGlobalData = () => {
+  return async (dispatch, getState) => {
+    try {
+      const response = await getRequest({
+        url: "https://api.coingecko.com/api/v3/global",
+        // url: "https://api.coincap.io/v2/assets",
+        // url: "https://rest.coinapi.io/v1/assets?apikey=9B9E8793-D68F-4C61-AD50-FC3A1CFF0320",
+      });
+      // console.log(response);
+      dispatch({
+        type: ActionTypes.GET_GLOBAL_CRYPTOCURRENCY_DATA,
+        payload: response,
+      });
     } catch (e) {
       console.error(e);
     }

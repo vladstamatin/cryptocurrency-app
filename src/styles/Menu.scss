@@ -4,6 +4,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  flex-direction: row;
   border-bottom: solid $border-background 1px;
   color: white;
 }
@@ -13,9 +14,10 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 50px;
   list-style: none;
   gap: 2rem;
-  justify-content: right;
   text-decoration: none;
 }
 .links-container li {
@@ -31,4 +33,20 @@
 }
 .links-container li:hover {
   color: greenyellow;
+}
+.logo-cointainer {
+  display: flex;
+  width: 400px;
+  height: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+.logo-cointainer p {
+  font-size: 25px;
+  color: $logo-color;
+}
+.logo-homepage {
+  height: 70px;
+  width: 70px;
+  margin-left: 20px;
 }

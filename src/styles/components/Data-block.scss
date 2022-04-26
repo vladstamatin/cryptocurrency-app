@@ -1,0 +1,27 @@
+.global-data-container {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.data-block-container {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid $border-background;
+}
+.data-block-container span {
+  color: $text-color;
+}
+
+.data-block-container span:nth-child(1) {
+  color: $text-color;
+  font-size: 15px;
+}
+.data-block-container span:nth-child(2) {
+  color: $text-color;
+  font-size: 45px;
+  text-align: center;
+}
