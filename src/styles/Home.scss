@@ -11,7 +11,7 @@
 }
 .right-side-container {
   width: 100%;
-  margin: 0 10% 0 10%;
+  margin: 2% 14% 2% 14%;
 }
 .table-container {
   display: flex;
@@ -34,7 +34,7 @@
   width: 100%;
 }
 .table-content ul {
-  height: 60px;
+  height: 45px;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -46,18 +46,18 @@
 }
 .table-content li,
 .table-header li {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 .table-content ul:hover {
-  background-color: $hover-elements;
+  background-color: $hover-element;
 }
 .table-content li:not(.table-content li:nth-child(1)),
 .table-header li:not(.table-header li:nth-child(1)) {
-  width: calc(100% - 50px);
+  width: calc(100% - 30px);
 }
 .table-content li:nth-child(2),
 .table-header li:nth-child(2) {
-  width: calc(100% + 40px) !important;
+  width: calc(100% + 20px) !important;
   display: flex;
   gap: 1rem;
 }

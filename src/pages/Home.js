@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getCryptocurrencies } from "../redux/actions/apiActions";
 import Menu from "../components/Menu/Menu";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import TableList from "../components/DataTable/TableList";
 import GlobalData from "./../components/GlobalData";
 

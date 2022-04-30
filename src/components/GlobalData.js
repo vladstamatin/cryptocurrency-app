@@ -22,7 +22,6 @@ const GlobalData = () => {
       : Math.abs(Number(value));
   };
 
-  console.log(globalData);
   if (
     typeof globalData === "undefined" ||
     (Object.keys(globalData).length === 0 && globalData.constructor === Object)

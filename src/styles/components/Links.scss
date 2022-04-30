@@ -1,0 +1,18 @@
+.links {
+}
+
+.link-style {
+  text-decoration: none;
+  color: $text-color;
+}
+.link-style {
+  font-size: 14px;
+  color: $text-color;
+  outline: none;
+  text-decoration: none;
+  border-bottom: none;
+  list-style: none;
+}
+.link-style:hover {
+  color: $hover-element;
+}

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import options from "./MenuOptions";
 import croissant from "../../assets/croissant-logo.png";
+import LinkList from "../../utils/LinkList";
 
 const Menu = () => {
   return (
@@ -11,16 +12,7 @@ const Menu = () => {
         <p>Krypto Kroissant</p>
       </div>
 
-      <div className="links-container">
-        <input></input>
-        {Object.keys(options).map((key, index) => {
-          return (
-            <Link key={key} to={options[key].url} className="link-style">
-              <li>{options[key].name}</li>
-            </Link>
-          );
-        })}
-      </div>
+      <LinkList options={options} />
     </div>
   );
 };

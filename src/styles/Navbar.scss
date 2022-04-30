@@ -1,6 +1,6 @@
 .nabar-container {
   background-color: $background-color;
-  width: 200px;
+  width: 350px;
   display: flex;
   border-right: solid $border-background 1px;
 }
@@ -8,4 +8,21 @@
 .sidebar-container {
   list-style: none;
   color: $text-color;
+  width: 100%;
+}
+
+.sidebar-container .links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: calc(100%-15px);
+}
+.sidebar-container .links li {
+  font-size: 18px;
+}
+
+.sidebar-container .links li:hover {
+  border-right: 5px solid $hover-element;
 }
