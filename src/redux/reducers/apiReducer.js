@@ -10,6 +10,10 @@ export const apiReducer = (state = initialState, { type, payload }) => {
       return { ...state, cryptocurrencies: payload };
     case ActionTypes.GET_GLOBAL_CRYPTOCURRENCY_DATA:
       return { ...state, global: payload };
+    case ActionTypes.GET_EXCHANGES:
+      return { ...state, global: payload };
+    case ActionTypes.SET_CURRENT_COIN:
+      return { ...state, global: payload };
     default:
       return state;
   }

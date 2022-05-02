@@ -7,10 +7,10 @@ import LinkList from "../../utils/LinkList";
 const Menu = () => {
   return (
     <div className="menu-container">
-      <div className="logo-cointainer">
+      <Link className="logo-cointainer" to={"/"}>
         <img src={croissant} className="logo-homepage" />
         <p>Krypto Kroissant</p>
-      </div>
+      </Link>
 
       <LinkList options={options} />
     </div>
