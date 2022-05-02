@@ -1,6 +1,6 @@
 import React from "react";
 import Menu from "../components/Menu/Menu";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 
 const News = () => {
   return (

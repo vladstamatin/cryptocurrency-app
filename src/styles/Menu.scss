@@ -8,31 +8,13 @@
   border-bottom: solid $border-background 1px;
   color: white;
 }
-
-.links-container {
-  font-size: 0px;
+.menu-container .links {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   margin-right: 50px;
-  list-style: none;
   gap: 2rem;
-  text-decoration: none;
-}
-.links-container li {
-  font-size: 14px;
-  color: $text-color;
-  outline: none;
-  text-decoration: none;
-  border-bottom: none;
-}
-
-.link-style {
-  text-decoration: none;
-}
-.links-container li:hover {
-  color: greenyellow;
 }
 .logo-cointainer {
   display: flex;

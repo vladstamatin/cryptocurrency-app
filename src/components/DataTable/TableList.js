@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getCryptocurrencies } from "../../redux/actions/apiActions";
-import TableItem from "../DataTable/TableItem";
+import TableRow from "../DataTable/TableRow";
 
 const headerTableOptions = [
   {
@@ -25,6 +25,7 @@ const TableList = () => {
   const cryptocurrencies = useSelector(
     (state) => state.allCryptoApis.cryptocurrencies
   );
+  // console.log(cryptocurrencies);
   if (
     typeof cryptocurrencies === "undefined" ||
     (Object.keys(cryptocurrencies).length === 0 &&
@@ -40,7 +41,7 @@ const TableList = () => {
         })}
       </div>
       <div className="table-content">
-        <TableItem cryptocurrencies={cryptocurrencies} />
+        <TableRow cryptocurrencies={cryptocurrencies} />
       </div>
     </div>
   );
