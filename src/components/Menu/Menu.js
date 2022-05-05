@@ -8,8 +8,8 @@ const Menu = () => {
   return (
     <div className="menu-container">
       <Link className="logo-cointainer" to={"/"}>
-        <img src={croissant} className="logo-homepage" />
-        <p>Krypto Kroissant</p>
+        {/* <img src={croissant} className="logo-homepage" /> */}
+        <p>Krypto</p>
       </Link>
 
       <LinkList options={options} />
