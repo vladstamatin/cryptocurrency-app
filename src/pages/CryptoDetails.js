@@ -12,12 +12,40 @@ const CryptoDetails = ({}) => {
 
   useEffect(() => {
     dispatch(getCryptocurrencies());
+
+    let string = "abcabcjkabcabhabc";
+    console.log("MY STRING: ", string);
+    let i = string.length;
+    let count = 0;
+
+    for (let i = 0; i < string.length; i++) {
+      count = 0;
+      for (let j = 0; j < string.length; j++) {
+        // console.log(i, ":", string[i], " : ", j, ":", string[j]);
+        if (string[i] === string[j]) {
+          count++;
+          // console.log(
+          //   i,
+          //   ":",
+          //   string[i],
+          //   " : ",
+          //   j,
+          //   ":",
+          //   string[j],
+          //   " -> ",
+          //   count
+          // );
+        }
+      }
+      if (count === 1) console.log("i found it");
+    }
+    // console.log(count);
   }, []);
 
   const coin = useSelector((state) =>
     state.allCryptoApis.cryptocurrencies.filter((item) => item.id === id)
   );
-  console.log(coin);
+  // console.log(coin);
 
   return (
     <div className="main-page-container">
